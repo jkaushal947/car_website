@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, userscalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JK's Autoworld</title>
+    <link rel="icon" href="images/jk_autoworld_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo"><img src="images/jk_autoworld_logo.png" alt=""></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cars" class="nav-link">Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#links" class="nav-link">Links</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="sub-headline">
+                <span class="first-letter">W</span>elcome
+            </h2>
+            <h1 class="headline">JK's Autoworld</h1>
+            <div class="headline-description">
+                <div class="separator">
+                    <div class="line line-left"></div>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <div class="line line-right"></div>
+                </div>
+                <div class="date">
+                    <p align="center" id="mydate"></p>
+                </div>
+                <div class="single-animation">
+                    <h5>This website showcases some of my all-time favorite cars ranging from hatchbacks to supercars.</h5>
+                    <a href="#cars" class="btn cta-btn">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cars" id="cars">
+        <div class="container">
+            <div class="cars-info">
+                <div class="cars-description padding-right animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            Favorite Cars of All Time
+                        </h2>
+                        <h1 class="headline headline-dark">Filter by Manufacturer</h1>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <div id="myBtnContainer">
+                        <button class="box-btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="box-btn" onclick="filterSelection('aston_martin')">Aston Martin</button>
+                        <button class="box-btn" onclick="filterSelection('audi')">Audi</button>
+                        <button class="box-btn" onclick="filterSelection('bmw')">BMW</button>
+                        <button class="box-btn" onclick="filterSelection('chevrolet')">Chevrolet</button>
+                        <button class="box-btn" onclick="filterSelection('dacia')">Dacia</button>
+                        <button class="box-btn" onclick="filterSelection('ferrari')">Ferrari</button>
+                        <button class="box-btn" onclick="filterSelection('fiat')">Fiat</button>
+                        <button class="box-btn" onclick="filterSelection('ford')">Ford</button>
+                        <button class="box-btn" onclick="filterSelection('honda')">Honda</button>
+                        <button class="box-btn" onclick="filterSelection('jaguar')">Jaguar</button>
+                        <button class="box-btn" onclick="filterSelection('kia')">Kia</button>
+                        <button class="box-btn" onclick="filterSelection('lamborghini')">Lamborghini</button>
+                        <button class="box-btn" onclick="filterSelection('lexus')">Lexus</button>
+                        <button class="box-btn" onclick="filterSelection('mclaren')">McLaren</button>
+                        <button class="box-btn" onclick="filterSelection('mercedes')">Mercedes</button>
+                        <button class="box-btn" onclick="filterSelection('mitsubishi')">Mitsubishi</button>
+                        <button class="box-btn" onclick="filterSelection('nissan')">Nissan</button>
+                        <button class="box-btn" onclick="filterSelection('renault')">Renault</button>
+                        <button class="box-btn" onclick="filterSelection('skoda')">Skoda</button>
+                        <button class="box-btn" onclick="filterSelection('subaru')">Subaru</button>
+                        <button class="box-btn" onclick="filterSelection('tesla')">Tesla</button>
+                        <button class="box-btn" onclick="filterSelection('toyota')">Toyota</button>
+                        <button class="box-btn" onclick="filterSelection('vauxhall')">Vauxhall</button>
+                        <button class="box-btn" onclick="filterSelection('volkswagen')">Volkswagen</button>
+                        <button class="box-btn" onclick="filterSelection('volvo')">Volvo</button>
+                    </div>
+
+                    <!-- Portfolio Gallery Grid -->
+                    <div class="row">
+                        <div class="column aston_martin">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/aston_martin_v8_vantage.jpg" alt="Aston Martin V8 Vantage" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Aston Martin V8 Vantage</p>
+                                <button class="modal-open" data-modal="modal1">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal1">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/aston_martin_logo.jpg">
+                                    </div>
+                                    <h2>Aston Martin V8 Vantage</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/iv_fSaRl5qs" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 380 - 595 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 3.6 - 4.9 secs</li>
+                                            <li><strong>Production:</strong> 2005 - 2018</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column audi">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/audi_a3.jpg" alt="Audi A3" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Audi A3</p>
+                                <button class="modal-open" data-modal="modal2">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal2">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/audi_logo.jpg" style="width:130px;height:96px;">
+                                    </div>
+                                    <h2>Audi A3</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/OaWTS6a1XLo" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 103 - 305 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 4.4 - 10.4 secs</li>
+                                            <li><strong>Production:</strong> 1996 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column audi">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/audi_r8.jpg" alt="Audi R8" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Audi R8</p>
+                                <button class="modal-open" data-modal="modal3">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal3">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/audi_logo.jpg" style="width:130px;height:96px;">
+                                    </div>
+                                    <h2>Audi R8</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/wtocaUVOcOE" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 532 - 601 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 4.4 - 10.4 secs</li>
+                                            <li><strong>Production:</strong> 2007 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column bmw">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/bmw_1-series.jpg" alt="BMW 1-Series" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>BMW 1-Series</p>
+                                <button class="modal-open" data-modal="modal4">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal4">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/bmw_logo.jpg" style="width:100px;height:100px;">
+                                    </div>
+                                    <h2>BMW 1-Series</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/3tI4Yeg9HvA" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 93 - 335 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 4.5 - 11.8 secs</li>
+                                            <li><strong>Production:</strong> 2004 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column bmw">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/bmw_3-series.jpg" alt="BMW 3-Series" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>BMW 3-Series</p>
+                                <button class="modal-open" data-modal="modal5">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal5">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/bmw_logo.jpg" style="width:100px;height:100px;">
+                                    </div>
+                                    <h2>BMW 3-Series</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/ivQmSccZ6P8" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 114 - 453 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 3.8 - 10.6 secs</li>
+                                            <li><strong>Production:</strong> 1983 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column bmw">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/bmw_z4.jpg" alt="BMW Z4" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>BMW Z4</p>
+                                <button class="modal-open" data-modal="modal6">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal6">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/bmw_logo.jpg" style="width:100px;height:100px;">
+                                    </div>
+                                    <h2>BMW Z4</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/eQLtii-Qh4Y" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 153 - 335 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 4.6 - 7.8 secs</li>
+                                            <li><strong>Production:</strong> 2003 - 2017, 2019 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column bmw">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/bmw_i8.jpg" alt="BMW i8" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>BMW i8</p>
+                                <button class="modal-open" data-modal="modal7">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal7">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/bmw_logo.jpg" style="width:100px;height:100px;">
+                                    </div>
+                                    <h2>BMW i8</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/xqQ3W6XaYqo" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 356 - 368 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 4.3 secs</li>
+                                            <li><strong>Production:</strong> 2014 - 2020</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column chevrolet">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/chevrolet_corvette.jpg" alt="Chevrolet Corvette" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Chevrolet Corvette</p>
+                                <button class="modal-open" data-modal="modal8">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column chevrolet">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/chevrolet_camaro.jpg" alt="Chevrolet Camaro" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Chevrolet Camaro</p>
+                                <button class="modal-open" data-modal="modal9">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column dacia">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/dacia_duster.jpg" alt="Dacia Duster" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                            </div>
+                            <p>Dacia Duster</p>
+                            <button class="modal-open" data-modal="modal10">More Info</button>
+                        </div>
+                        <div class="column ferrari">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/ferrari_f430.jpg" alt="Ferrari F430" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Ferrari F430</p>
+                                <button class="modal-open" data-modal="modal11">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column ferrari">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/ferrari_458.jpg" alt="Ferrari 458" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Ferrari 458</p>
+                                <button class="modal-open" data-modal="modal12">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column ferrari">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/ferrari_ff.jpg" alt="Ferrari FF" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Ferrari FF</p>
+                                <button class="modal-open" data-modal="modal13">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column ferrari">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/ferrari_california.jpg" alt="Ferrari California" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Ferrari California</p>
+                                <button class="modal-open" data-modal="modal14">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column fiat">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/fiat_500.jpg" alt="Fiat 500" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Fiat 500</p>
+                                <button class="modal-open" data-modal="modal15">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column ford">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/ford_focus.jpg" alt="Ford Focus" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Ford Focus</p>
+                                <button class="modal-open" data-modal="modal16">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column ford">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/ford_mondeo.jpg" alt="Ford Mondeo" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Ford Mondeo</p>
+                                <button class="modal-open" data-modal="modal17">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column ford">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/ford_mustang.jpg" alt="Ford Mustang" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Ford Mustang</p>
+                                <button class="modal-open" data-modal="modal18">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column honda">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/honda_nsx.jpg" alt="Honda NSX" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Honda NSX</p>
+                                <button class="modal-open" data-modal="modal19">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column jaguar">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/jaguar_xf.jpg" alt="Jaguar XF" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Jaguar XF</p>
+                                <button class="modal-open" data-modal="modal20">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column jaguar">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/jaguar_xj.jpg" alt="Jaguar XJ" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Jaguar XJ</p>
+                                <button class="modal-open" data-modal="modal21">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column jaguar">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/jaguar_f-type.jpg" alt="Jaguar F-Type" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Jaguar F-Type</p>
+                                <button class="modal-open" data-modal="modal22">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column kia">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/kia_ceed.jpg" alt="Kia Cee'd" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Kia Cee'd</p>
+                                <button class="modal-open" data-modal="modal23">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column lamborghini">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/lamborghini_gallardo.jpg" alt="Lamborghini Gallardo" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Lamborghini Gallardo</p>
+                                <button class="modal-open" data-modal="modal24">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column lamborghini">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/lamborghini_aventador.jpg" alt="Lamborghini Aventador" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Lamborghini Aventador</p>
+                                <button class="modal-open" data-modal="modal25">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column lamborghini">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/lamborghini_huracan.jpg" alt="Lamborghini Huracan" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Lamborghini Huracan</p>
+                                <button class="modal-open" data-modal="modal26">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column lexus">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/lexus_ls.jpg" alt="Lexus LS" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Lexus LS</p>
+                                <button class="modal-open" data-modal="modal27">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column mclaren">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/mclaren_mp4_12c_spider.jpg" alt="McLaren MP4-12C" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>McLaren MP4-12C</p>
+                                <button class="modal-open" data-modal="modal28">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column mclaren">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/mclaren_675lt.jpg" alt="McLaren 675LT" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>McLaren 675LT</p>
+                                <button class="modal-open" data-modal="modal29">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column mclaren">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/mclaren_570s.jpg" alt="McLaren 570S" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>McLaren 570S</p>
+                                <button class="modal-open" data-modal="modal30">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column mercedes">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/mercedes-benz_sls.jpg" alt="Mercedes-Benz SLS" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Mercedes-Benz SLS</p>
+                                <button class="modal-open" data-modal="modal31">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column mercedes">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/mercedes_amg_gt.jpg" alt="Mercedes AMG GT" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Mercedes AMG GT</p>
+                                <button class="modal-open" data-modal="modal32">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column mitsubishi">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/mitsubishi_evo_x.jpg" alt="Mitsubish Evo X" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Mitsubish Evo X</p>
+                                <button class="modal-open" data-modal="modal33">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column nissan">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/nissan_note.jpg" alt="Nissan Note" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Nissan Note</p>
+                                <button class="modal-open" data-modal="modal34">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column nissan">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/nissan_qashqai.JPG" alt="Nissan Qashqai" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Nissan Qashqai</p>
+                                <button class="modal-open" data-modal="modal35">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column nissan">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/nissan_gtr.jpg" alt="Nissan GT-R" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Nissan GT-R</p>
+                                <button class="modal-open" data-modal="modal36">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column renault">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/renault_clio.jpg" alt="Renault Clio" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Renault Clio</p>
+                                <button class="modal-open" data-modal="modal37">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column skoda">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/skoda_octavia.jpg" alt="Skoda Octavia" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Skoda Octavia</p>
+                                <button class="modal-open" data-modal="modal38">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column subaru">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/subaru_impreza.jpg" alt="Subaru Impreza" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Subaru Impreza</p>
+                                <button class="modal-open" data-modal="modal39">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column subaru">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/subaru_legacy.jpg" alt="Subaru Legacy" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Subaru Legacy</p>
+                                <button class="modal-open" data-modal="modal40">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column tesla">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/tesla_model_s.jpg" alt="Tesla Model S" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Tesla Model S</p>
+                                <button class="modal-open" data-modal="modal40">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column toyota">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/toyota_aygo.jpg" alt="Toyota Aygo" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Toyota Aygo</p>
+                                <button class="modal-open" data-modal="modal41">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column toyota">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/toyota_aqua.jpg" alt="Toyota Aqua" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Toyota Aqua</p>
+                                <button class="modal-open" data-modal="modal42">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column toyota">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/toyota_gt-86.jpg" alt="Toyota GT-86" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Toyota GT-86</p>
+                                <button class="modal-open" data-modal="modal43">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column vauxhall">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/vauxhall_astra.jpg" alt="Vauxhall Astra" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Vauxhall Astra</p>
+                                <button class="modal-open" data-modal="modal44">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column vauxhall">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/vauxhall_vxr8.jpg" alt="Vauxhall VXR8" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Vauxhall VXR8</p>
+                                <button class="modal-open" data-modal="modal45">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column volkswagen">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/vw_up.jpg" alt="Volkswagen Up!" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Volkswagen Up!</p>
+                                <button class="modal-open" data-modal="modal46">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column volkswagen">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/vw_golf.jpg" alt="Volkswagen Golf" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Volkswagen Golf</p>
+                                <button class="modal-open" data-modal="modal47">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column volvo">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/volvo_c30.jpg" alt="Volvo C30" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Volvo C30</p>
+                                <button class="modal-open" data-modal="modal48">More Info</button>
+                            </div>
+                        </div>
+                        <div class="column volvo">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/volvo_v70.jpg" alt="Volvo V70" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Volvo V70</p>
+                                <button class="modal-open" data-modal="modal49">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="links" id="links">
+        <div class="container">
+            <div class="center">
+                <div>
+                    <h2 class="sub-headline">Links</h2>
+                    <div class="container boxHolder">
+                        <div class="box">
+                            <div id="responsive" class="wow zoomIn">
+                                <img src="images/links/auto_express_website.PNG" "width:683px;height:364px" onclick="onClick(this)" class="modal-hover-opacity">
+                            </div>
+                            <a href="https://www.autoexpress.co.uk/">
+                                <p>Auto Express</p>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <div id="responsive" class="wow zoomIn">
+                                <img src="images/links/autocar_website.PNG" "width:683px;height:364px" onclick="onClick(this)" class="modal-hover-opacity">
+                            </div><a href="https://www.autocar.co.uk/">
+                                <p>Autocar</p>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <div id="responsive" class="wow zoomIn">
+                                <img src="images/links/auto_trader_website.PNG" "width:683px;height:364px" onclick="onClick(this)" class="modal-hover-opacity">
+                            </div><a href="https://www.autotrader.co.uk/">
+                                <p>Auto Trader</p>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <div id="responsive" class="wow zoomIn">
+                                <img src="images/links/car_magazine_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                            </div>
+                            <a href="https://www.carmagazine.co.uk/">
+                                <p>Car Magazine</p>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <div id="responsive" class="wow zoomIn">
+                                <img src="images/links/evo_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                            </div>
+                            <a href="https://www.evo.co.uk/">
+                                <p>EVO</p>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <div id="responsive" class="wow zoomIn">
+                                <img src="images/links/honest_john_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                            </div>
+                            <a href="https://www.honestjohn.co.uk/">
+                                <p>Honest John</p>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <div id="responsive" class="wow zoomIn">
+                                <img src="images/links/parkers_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                            </div>
+                            <a href="https://www.parkers.co.uk">
+                                <p>Parkers</p>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <div id="responsive" class="wow zoomIn">
+                                <img src="images/links/top_gear_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                            </div>
+                            <a href="https://www.topgear.com/">
+                                <p>Top Gear</p>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <div id="responsive" class="wow zoomIn">
+                                <img src="images/links/what_car_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                            </div>
+                            <a href="https://www.whatcar.com/">
+                                <p>What Car?</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
