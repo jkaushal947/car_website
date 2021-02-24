@@ -23,7 +23,7 @@
                 <a href="index.html" class="logo"><img src="images/jk_autoworld_logo.png" alt=""></a>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#hero" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#cars" class="nav-link">Cars</a>
@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <section class="hero" id="hero">
+    <section class="home" id="home">
         <div class="container">
             <h2 class="sub-headline">
                 <span class="first-letter">W</span>elcome
@@ -48,11 +48,8 @@
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
                     <div class="line line-right"></div>
                 </div>
-                <div class="date">
-                    <p align="center" id="mydate"></p>
-                </div>
                 <div class="single-animation">
-                    <h5>This website showcases some of my all-time favorite cars ranging from hatchbacks to supercars.</h5>
+                    <h5>This website showcases some of my all-time favorite cars ranging from hatchbacks to supercars</h5>
                     <a href="#cars" class="btn cta-btn">Explore</a>
                 </div>
             </div>
@@ -84,10 +81,12 @@
                         <button class="box-btn" onclick="filterSelection('kia')">Kia</button>
                         <button class="box-btn" onclick="filterSelection('lamborghini')">Lamborghini</button>
                         <button class="box-btn" onclick="filterSelection('lexus')">Lexus</button>
+                        <button class="box-btn" onclick="filterSelection('mazda')">Mazda</button>
                         <button class="box-btn" onclick="filterSelection('mclaren')">McLaren</button>
                         <button class="box-btn" onclick="filterSelection('mercedes')">Mercedes</button>
                         <button class="box-btn" onclick="filterSelection('mitsubishi')">Mitsubishi</button>
                         <button class="box-btn" onclick="filterSelection('nissan')">Nissan</button>
+                        <button class="box-btn" onclick="filterSelection('peugeot')">Peugeot</button>
                         <button class="box-btn" onclick="filterSelection('renault')">Renault</button>
                         <button class="box-btn" onclick="filterSelection('skoda')">Skoda</button>
                         <button class="box-btn" onclick="filterSelection('subaru')">Subaru</button>
@@ -400,6 +399,39 @@
                         <div class="column dacia">
                             <div class="content">
                                 <div id="responsive">
+                                    <img src="images/cars/dacia_sandero.jpg" alt="Dacia Sandero" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                            </div>
+                            <p>Dacia Duster</p>
+                            <button class="modal-open" data-modal="modal52">More Info</button>
+                        </div>
+                        <div class="modal" id="modal52">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/dacia_logo.jpg" style="width:95px;height:95px;">
+                                    </div>
+                                    <h2>Dacia Sandero</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/qcw5cO_IMyc" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 66 - 98 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 10.7 - 16.2 secs</li>
+                                            <li><strong>Production:</strong> 2007 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column dacia">
+                            <div class="content">
+                                <div id="responsive">
                                     <img src="images/cars/dacia_duster.jpg" alt="Dacia Duster" onclick="onClick(this)" class="modal-hover-opacity">
                                 </div>
                             </div>
@@ -478,7 +510,7 @@
                                     <div class="center-image">
                                         <img src="images/cars/logos/ferrari_logo.jpg" style="width:90px;height:95px;">
                                     </div>
-                                    <h2>Ferrari F430</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                    <h2>Ferrari 458</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="iframe-container">
@@ -490,7 +522,40 @@
                                             <li><strong>Car Details</strong></li>
                                             <li><strong>Power:</strong> 562 - 596 bhp</li>
                                             <li><strong>0 - 60 mph:</strong> 2.9 - 3.3 secs</li>
-                                            <li><strong>Production:</strong> 2010 - 2016</li>
+                                            <li><strong>Production:</strong> 2010 - 2015</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column ferrari">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/ferrari_448.jpg" alt="Ferrari 448" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Ferrari 448</p>
+                                <button class="modal-open" data-modal="modal53">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal53">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/ferrari_logo.jpg" style="width:90px;height:95px;">
+                                    </div>
+                                    <h2>Ferrari 448</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/ECSnnCDkNjE" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 660 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 3.0 secs</li>
+                                            <li><strong>Production:</strong> 2015 - 2020</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -859,6 +924,39 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="column kia">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/kia_sportage.jpg" alt="Kia Sportage" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Kia Sportage</p>
+                                <button class="modal-open" data-modal="modal54">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal54">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/kia_logo.png" style="width:130px;height:95px;">
+                                    </div>
+                                    <h2>Kia Sportage</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/5tUKj4fuL-A" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 114 - 182 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 8.6 - 11.9 secs</li>
+                                            <li><strong>Production:</strong> 1995 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="column lamborghini">
                             <div class="content">
                                 <div id="responsive">
@@ -991,6 +1089,72 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="column mazda">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/mazda_mx-5.jpg" alt="Mazda MX-5" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Mazda MX-5</p>
+                                <button class="modal-open" data-modal="modal55">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal55">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/mazda_logo.jpg" style="width:170px;height:46px;">
+                                    </div>
+                                    <h2>Mazda MX-5</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/QQN0Pd1F6gs" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 90 - 181 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 6.3 - 8.0 secs</li>
+                                            <li><strong>Production:</strong> 1989 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mazda">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/mazda_rx-8.jpg" alt="Mazda RX-8" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Mazda RX-8</p>
+                                <button class="modal-open" data-modal="modal56">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal56">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/mazda_logo.jpg" style="width:170px;height:46px;">
+                                    </div>
+                                    <h2>Mazda RX-8</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/g5FNjyaLfC8" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 189 - 227 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 6.2 - 7.0 secs</li>
+                                            <li><strong>Production:</strong> 2003 - 2010</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="column mclaren">
                             <div class="content">
                                 <div id="responsive">
@@ -1085,6 +1249,39 @@
                                             <li><strong>Power:</strong> 562 bhp</li>
                                             <li><strong>0 - 60 mph:</strong> 3.3 secs</li>
                                             <li><strong>Production:</strong> 2015 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mercedes">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/mercedes-benz_a-class.jpg" alt="Mercedes-Benz A-Class" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Mercedes-Benz A-Class</p>
+                                <button class="modal-open" data-modal="modal57">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal57">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/mercedes-benz_logo.png" style="width:170px;height:56px;">
+                                    </div>
+                                    <h2>Mercedes-Benz A-Class</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/YGQEgTSDP5E" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 75 - 375 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 4.1 - 14.8 secs</li>
+                                            <li><strong>Production:</strong> 1998 - Present</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1192,6 +1389,39 @@
                         <div class="column nissan">
                             <div class="content">
                                 <div id="responsive">
+                                    <img src="images/cars/nissan_micra.jpg" alt="Nissan Micra" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Nissan Micra</p>
+                                <button class="modal-open" data-modal="modal58">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal58">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/nissan_logo.jpg" style="width:95px;height:95px;">
+                                    </div>
+                                    <h2>Nissan Micra</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/VrrjIR_D0kE" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 70 - 115 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 9.6 - 15.9 secs</li>
+                                            <li><strong>Production:</strong> 1983 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column nissan">
+                            <div class="content">
+                                <div id="responsive">
                                     <img src="images/cars/nissan_note.jpg" alt="Nissan Note" onclick="onClick(this)" class="modal-hover-opacity">
                                 </div>
                                 <p>Nissan Note</p>
@@ -1258,6 +1488,39 @@
                         <div class="column nissan">
                             <div class="content">
                                 <div id="responsive">
+                                    <img src="images/cars/nissan_370z.jpg" alt="Nissan 370Z" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Nissan 370Z</p>
+                                <button class="modal-open" data-modal="modal59">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal59">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/nissan_logo.jpg" style="width:95px;height:95px;">
+                                    </div>
+                                    <h2>Nissan 370Z</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/ldz4yIcL0o4" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 323 - 326 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 5.1 - 5.5 secs</li>
+                                            <li><strong>Production:</strong> 2009 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column nissan">
+                            <div class="content">
+                                <div id="responsive">
                                     <img src="images/cars/nissan_gtr.jpg" alt="Nissan GT-R" onclick="onClick(this)" class="modal-hover-opacity">
                                 </div>
                                 <p>Nissan GT-R</p>
@@ -1283,6 +1546,39 @@
                                             <li><strong>Power:</strong> 532 - 601 bhp</li>
                                             <li><strong>0 - 60 mph:</strong> 3.1 - 3.6 secs</li>
                                             <li><strong>Production:</strong> 2007 - Present</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column peugeot">
+                            <div class="content">
+                                <div id="responsive">
+                                    <img src="images/cars/peugeot_208.jpg" alt="Peugeot 208" onclick="onClick(this)" class="modal-hover-opacity">
+                                </div>
+                                <p>Peugeot 208</p>
+                                <button class="modal-open" data-modal="modal60">More Info</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal60">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="center-image">
+                                        <img src="images/cars/logos/peugeot_logo.jpg" style="width:100px;height:100px;">
+                                    </div>
+                                    <h2>Peugeot 208</h2><button class="icon modal-close"><i class="material-icons">x</i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="iframe-container">
+                                        <iframe width="656" height="390" src="https://www.youtube.com/embed/G_wF0EJQ3UY" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                    <div id="details">
+                                        <ul>
+                                            <li><strong>Car Details</strong></li>
+                                            <li><strong>Power:</strong> 67 - 162 bhp</li>
+                                            <li><strong>0 - 60 mph:</strong> 7.1 - 15.7 secs</li>
+                                            <li><strong>Production:</strong> 2012 - Present</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1797,71 +2093,71 @@
                     <div class="container boxHolder">
                         <div class="box">
                             <div id="responsive" class="wow zoomIn">
-                                <img src="images/links/auto_express_website.PNG" "width:683px;height:364px" onclick="onClick(this)" class="modal-hover-opacity">
+                                <img src="images/links/auto_express_website.PNG" onclick="onClick(this)" class="modal-hover-opacity">
                             </div>
-                            <a href="https://www.autoexpress.co.uk/">
+                            <a href="https://www.autoexpress.co.uk/" target="_blank">
                                 <p>Auto Express</p>
                             </a>
                         </div>
                         <div class="box">
                             <div id="responsive" class="wow zoomIn">
-                                <img src="images/links/autocar_website.PNG" "width:683px;height:364px" onclick="onClick(this)" class="modal-hover-opacity">
-                            </div><a href="https://www.autocar.co.uk/">
+                                <img src="images/links/autocar_website.PNG" onclick="onClick(this)" class="modal-hover-opacity">
+                            </div><a href="https://www.autocar.co.uk/" target="_blank">
                                 <p>Autocar</p>
                             </a>
                         </div>
                         <div class="box">
                             <div id="responsive" class="wow zoomIn">
-                                <img src="images/links/auto_trader_website.PNG" "width:683px;height:364px" onclick="onClick(this)" class="modal-hover-opacity">
-                            </div><a href="https://www.autotrader.co.uk/">
+                                <img src="images/links/auto_trader_website.PNG" onclick="onClick(this)" class="modal-hover-opacity">
+                            </div><a href="https://www.autotrader.co.uk/" target="_blank">
                                 <p>Auto Trader</p>
                             </a>
                         </div>
                         <div class="box">
                             <div id="responsive" class="wow zoomIn">
-                                <img src="images/links/car_magazine_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                                <img src="images/links/car_magazine_website.PNG" onclick="onClick(this)" class="modal-hover-opacity">
                             </div>
-                            <a href="https://www.carmagazine.co.uk/">
+                            <a href="https://www.carmagazine.co.uk/" target="_blank">
                                 <p>Car Magazine</p>
                             </a>
                         </div>
                         <div class="box">
                             <div id="responsive" class="wow zoomIn">
-                                <img src="images/links/evo_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                                <img src="images/links/evo_website.PNG" onclick="onClick(this)" class="modal-hover-opacity">
                             </div>
-                            <a href="https://www.evo.co.uk/">
+                            <a href="https://www.evo.co.uk/" target="_blank">
                                 <p>EVO</p>
                             </a>
                         </div>
                         <div class="box">
                             <div id="responsive" class="wow zoomIn">
-                                <img src="images/links/honest_john_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                                <img src="images/links/honest_john_website.PNG" onclick="onClick(this)" class="modal-hover-opacity">
                             </div>
-                            <a href="https://www.honestjohn.co.uk/">
+                            <a href="https://www.honestjohn.co.uk/" target="_blank">
                                 <p>Honest John</p>
                             </a>
                         </div>
                         <div class="box">
                             <div id="responsive" class="wow zoomIn">
-                                <img src="images/links/parkers_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                                <img src="images/links/parkers_website.PNG" onclick="onClick(this)" class="modal-hover-opacity">
                             </div>
-                            <a href="https://www.parkers.co.uk">
+                            <a href="https://www.parkers.co.uk" target="_blank">
                                 <p>Parkers</p>
                             </a>
                         </div>
                         <div class="box">
                             <div id="responsive" class="wow zoomIn">
-                                <img src="images/links/top_gear_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                                <img src="images/links/top_gear_website.PNG" onclick="onClick(this)" class="modal-hover-opacity">
                             </div>
-                            <a href="https://www.topgear.com/">
+                            <a href="https://www.topgear.com/" target="_blank">
                                 <p>Top Gear</p>
                             </a>
                         </div>
                         <div class="box">
                             <div id="responsive" class="wow zoomIn">
-                                <img src="images/links/what_car_website.PNG" "width:683px;height=364px" onclick="onClick(this)" class="modal-hover-opacity">
+                                <img src="images/links/what_car_website.PNG" onclick="onClick(this)" class="modal-hover-opacity">
                             </div>
-                            <a href="https://www.whatcar.com/">
+                            <a href="https://www.whatcar.com/" target="_blank">
                                 <p>What Car?</p>
                             </a>
                         </div>
@@ -1873,7 +2169,7 @@
     <footer>
         <div class="container">
             <div class="back-to-top">
-                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+                <a href="#home"><i class="fas fa-chevron-up"></i></a>
             </div>
         </div>
     </footer>
