@@ -61,64 +61,6 @@ menuToggler.addEventListener('click', function () {
     }
 };
 
-{
-    var mydate = new Date();
-    var day = mydate.getDay();
-    var month = mydate.getMonth();
-    var year = mydate.getYear();
-    var d = mydate.getDate();
-    if (year < 1000)
-        year += 1900;
-    if (d < 10)
-        d = "0" + d;
-    var theDay = "";
-    if (day == 1) {
-        theDay = "Monday";
-    } else if (day == 2) {
-        theDay = "Tuesday";
-    } else if (day == 3) {
-        theDay = "Wednesday";
-    } else if (day == 4) {
-        theDay = "Thursday";
-    } else if (day == 5) {
-        theDay = "Friday";
-    } else if (day == 6) {
-        theDay = "Saturday";
-    } else {
-        theDay = "Sunday";
-    }
-    var theMonth = "";
-    if (month == 0) {
-        theMonth = "January";
-    } else if (month == 1) {
-        theMonth = "February";
-    } else if (month == 2) {
-        theMonth = "March";
-    } else if (month == 3) {
-        theMonth = "April";
-    } else if (month == 4) {
-        theMonth = "May";
-    } else if (month == 5) {
-        theMonth = "June";
-    } else if (month == 6) {
-        theMonth = "July";
-    } else if (month == 7) {
-        theMonth = "August";
-    } else if (month == 8) {
-        theMonth = "September";
-    } else if (month == 9) {
-        theMonth = "October";
-    } else if (month == 10) {
-        theMonth = "November";
-    } else {
-        theMonth = "December";
-    }
-
-    var mydate = theDay + " " + d + " " + theMonth + " " + year;
-    document.getElementById('mydate').innerHTML = "Today's date: " + mydate;
-
-};
-
 var modalBtns = document.querySelectorAll('.modal-open');
 
 modalBtns.forEach(function (btn) {
